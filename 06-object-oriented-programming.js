@@ -97,7 +97,7 @@ class Product{
 }
 
 class Transaction{
-    constructor(){
+    constructor(){ 
         this.total = 0,
         this.kuantiti = 0,
         this.produk = []

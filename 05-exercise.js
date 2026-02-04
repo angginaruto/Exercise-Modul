@@ -9,6 +9,8 @@ a. Example : arr = [12, 5, 23, 18, 4, 45, 32] → {lowest : 4, highest: 45, aver
 const string_masukan = prompt("Masukan value array, pisahkan dengan koma : ")
 const arr = string_masukan.split(",").map(Number)
 
+function nilai_kecil_dan_besar(arr){
+
 let nilai_terkecil = arr[0]
 let nilai_terbesar = arr[0]
 let jumlah = 0
@@ -30,7 +32,9 @@ for(let i = 0; i < arr.length; i++){
 }
 
 console.log(`lowest : ${nilai_terkecil}, highest : ${nilai_terbesar}, average : ${rata2}`)
+}
 
+nilai_kecil_dan_besar(arr)
 /*
 Write a function that takes an array of words and returns a string by concatenating the words in the array, separated
 by commas and - the last word - by an 'and'.
@@ -50,6 +54,7 @@ for(let i = 0; i < Array.length; i++){
 }
 
 console.log(kalimat)
+
 
 /*
 Write a function from a given array of numbers and return the second smallest number
